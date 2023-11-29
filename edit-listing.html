@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add Listing</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Lightgallery CSS -->
+    <link rel="stylesheet" href="vendor/lightgallery/css/lightgallery.min.css">
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="asset/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/chaincitydashboard.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/admin.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main>
+            <div class="container-fluid">
+                <div class="row" style="position: relative;">
+                    <div class="col-lg-3 adm-sidebar">
+                        <div class="adm-sidebar-header">
+                             <div class="adm-sidebar-close d-lg-none"><i class="fa fa-times"></i></div>
+                             <div class="logo">
+                                  <img src="asset/img/logo.png" class="img-fluid mb-2" alt="">
+                             </div>
+                        </div>
+                        <div class="adm-sidebar-content">
+                             <ul class="adm-sidebar-links-nav">
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="index.html" class="adm-sidebar-link">
+                                            <img src="asset/img/icon-dashboard-active.png" class="active d-none"
+                                                 alt="">
+                                            <img src="asset/img/icon-dashboard-inactive.png" class="in-active"
+                                                 alt="">
+                                            Dashboard
+                                       </a>
+                                  </li>
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="listing-management.html" class="adm-sidebar-link active">
+                                            <img src="asset/img/icon-listing-active.png" class="active " alt="">
+                                            <img src="asset/img/icon-listing.png" class="in-active d-none" alt="">
+                                            Listing Management
+                                       </a>
+                                  </li>
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="booking-management.html" class="adm-sidebar-link">
+                                            <img src="asset/img/icon-booking-active.png" class="active d-none"
+                                                 alt="">
+                                            <img src="asset/img/icon-booking.png" class="in-active" alt="">
+                                            Booking Management
+                                       </a>
+                                  </li>
+
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="user-management.html" class="adm-sidebar-link">
+                                            <img src="asset/img/icon-users-active.png" class="active d-none"
+                                                 alt="">
+                                            <img src="asset/img/icon-users-inactive.png" class="in-active" alt="">
+                                            User Management
+                                       </a>
+                                  </li>
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="payment-revenue.html" class="adm-sidebar-link">
+                                            <img src="asset/img/icon-payment-active.png" class="active d-none"
+                                                 alt="">
+                                            <img src="asset/img/icon-payment.png" class="in-active" alt="">
+                                            Payment and Revenue
+                                       </a>
+                                  </li>
+                                  <li class="adm-sidebar-link-item">
+                                       <a href="profile.html" class="adm-sidebar-link">
+                                            <img src="asset/img/icon-profile-active.png" class="active d-none"
+                                                 alt="">
+                                            <img src="asset/img/icon-profile.png" class="in-active" alt="">
+                                            Profile
+                                       </a>
+                                  </li>
+                             </ul>
+                             <div class="adm-sidebar-footer">
+                                  <a href="profile.html">
+                                       <div class="d-flex align-items-center justify-content-start gap-3 mb-4">
+                                           <div class="img">
+                                               <img src="asset/img/team4.png" alt="">
+                                           </div>
+                                           <div class="usr">
+                                               <h4>Mary John Doe</h4>
+                                               <small>maryjohndoe@domain.com</small>
+                                           </div>
+                                       </div>
+                                   </a>
+                                  <div class="mb-5 pb-5">
+                                       <a href="javascript:;" class="adm-btn adm-btn-primary">Logout <img
+                                                 src="asset/img/icon-logout.png" alt=""></a>
+                                  </div>
+                                  <div>
+                                       <img src="asset/img/support-img-red.png" class="img-fluid w-100" alt="">
+                                  </div>
+                             </div>
+                        </div>
+
+                   </div>
+                    <div class="col-lg-9 adm-main">
+                        <div class="adm-main-header">
+                            <div class="dtl order-2 order-lg-1">
+                                <h4>Edit Listing</h4>
+                                <small>You are editing <strong>Luxury Penthouse</strong></small>
+                            </div>
+                            <div class="order-1 order-lg-2 nty-ctn">
+                                <img src="asset/img/icon-menu-red.png" class="d-lg-none adm-menu-btn" alt="">
+                                <ul class="nty">
+                                     <li style="position: relative;" class="dropdown">
+                                          <img src="asset/img/icon-bell.png" alt="" role="button"
+                                               data-bs-toggle="dropdown" aria-expanded="false">
+                                          <span class="nty-counter">22</span>
+                                          <ul class="dropdown-menu ntf_dpw p-3 drop-notify adm-notify">
+                                               <li
+                                                    class="d-flex align-items-start justify-content-between border-bottom py-3">
+                                                    <h3 class="dsb-header-sm text-primary mb-0">Notifications
+                                                    </h3>
+                                                    <a href="javascript:;" class="text-dark"> Clear all </a>
+                                               </li>
+                                               <li class="nav_dpd_itm">
+                                                    <div
+                                                         class="d-flex align-items-center justify-content-between">
+                                                         <div
+                                                              class="d-flex align-items-start justify-content-start gap-2">
+                                                              <div>
+                                                                   <a href="notification.html"
+                                                                        class="text-dark">
+                                                                        <h5 class="ntf_heading"><strong>New
+                                                                                  listing
+                                                                                  created</strong></h5>
+                                                                        <small class="ntf_stdt">You created a
+                                                                             listing now. <a
+                                                                                  href="listing-management.html"
+                                                                                  class="text-primary">See
+                                                                                  it.</a></small>
+                                                                   </a>
+                                                              </div>
+                                                         </div>
+                                                         <div
+                                                              class="d-flex align-items-center justify-content-end gap-3">
+                                                              <p class="ntf_tme">Yesterday</p>
+                                                              <p class="adm-nty-unread"></p>
+                                                         </div>
+                                                    </div>
+                                               </li>
+                                               <li class="nav_dpd_itm">
+                                                    <div
+                                                         class="d-flex align-items-center justify-content-between">
+                                                         <div
+                                                              class="d-flex align-items-start justify-content-start gap-2">
+                                                              <div>
+                                                                   <a href="notification.html"
+                                                                        class="text-dark read">
+                                                                        <h5 class="ntf_heading"><strong>New
+                                                                                  feature
+                                                                                  alert</strong></h5>
+                                                                        <small class="ntf_stdt">Checkout how we
+                                                                             do things
+                                                                             newly</small>
+                                                                   </a>
+                                                              </div>
+                                                         </div>
+                                                         <p class="ntf_tme">Yesterday</p>
+                                                    </div>
+                                               </li>
+                                          </ul>
+                                     </li>
+                                     <li>
+                                          <a href="profile.html">
+                                               <div class="img">
+                                                    <img src="asset/img/team3.png" alt="">
+                                               </div>
+                                          </a>
+                                     </li>
+                                </ul>
+                           </div>
+                        </div>
+                        <div class="adm-main-content">
+                            <div class="row">
+                                <div class="col-sm-1"></div>
+                                <div class="col-sm-10 add-listing-ctn">
+                                    <form action="">
+                                        <div class="tabs mb-5 mt-3 pb-3">
+                                            <div class="mb-5 text-end pb-3">
+                                                <a href="javascript:;" class="se-btn">Save Changes</a>
+                                            </div>
+                                            <!-- <div class="tab">
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-md-6 mb-3 pr-5">
+                                                        <h1 class="dsb-header">It's easy to get started in </h1>
+                                                        <h1 class="dsb-header-md text-primary">ChainCity</h1>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <div class="d-flex align-items-end justify-content-start">
+                                                            <div
+                                                                class="d-flex align-items-start justify-content-start gap-1">
+                                                                <h6><b>1.</b></h6>
+                                                                <div>
+                                                                    <h6><b>Tell us about your place</b></h6>
+                                                                    <small>Share some basic info, like where it is and
+                                                                        how many guest can stay.</small>
+                                                                </div>
+                                                            </div>
+                                                            <img src="asset/img/solar2.png" width="80px" alt="">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex align-items-end justify-content-start">
+                                                            <div
+                                                                class="d-flex align-items-start justify-content-start gap-1">
+                                                                <h6><b>2.</b></h6>
+                                                                <div>
+                                                                    <h6><b>Make it stand out</b></h6>
+                                                                    <small>Add 5 or more photos plus a title and
+                                                                        description -- we'll help you out.</small>
+                                                                </div>
+                                                            </div>
+                                                            <img src="asset/img/snowball2.png" width="50px" alt="">
+                                                        </div>
+                                                        <hr>
+                                                        <div class="d-flex align-items-end justify-content-start">
+                                                            <div
+                                                                class="d-flex align-items-start justify-content-start gap-1">
+                                                                <h6><b>3.</b></h6>
+                                                                <div>
+                                                                    <h6><b>Finish Up and Publish</b></h6>
+                                                                    <small>Choose if you'd like to start with
+                                                                        experienced guest, set a starting price and
+                                                                        publish your listing.</small>
+                                                                </div>
+                                                            </div>
+                                                            <img src="asset/img/house3.png" width="90px" alt="">
+                                                        </div>
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row align-items-center justify-content-center mt-2">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mb-3">
+                                                                <small class="text-primary">Step 1</small>
+                                                                <h1 class="dsb-header-sm mt-2">Tell us about your place
+                                                                </h1>
+                                                                <small>
+                                                                    In this step, we'll ask you which type of property
+                                                                    you have and if guests will book the entire place
+                                                                    or
+                                                                    just a room. Then let us know the location and how
+                                                                    many guests can stay.
+                                                                </small>
+                                                            </div>
+                                                            <div class="col-md-5 mb-3">
+                                                                <img src="asset/img/solar2.png" width="200px" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div> -->
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Which of these best
+                                                                describes your place?</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    House
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Apartment
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Barn
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Boat
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Cabin
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Casa Particular
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Hotel
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Castle
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Cave
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Container
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Camper
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4 apt_sib">
+                                                                <div class="apt_desc">
+                                                                    Dome
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>What type of place will
+                                                                guests have?</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-12">
+                                                                <div class="gst_plc">
+                                                                    <h5>An entire place</h5>
+                                                                    <small>Guests have the whole place to
+                                                                        themselves.</small>
+                                                                </div>
+                                                                <div class="gst_plc">
+                                                                    <h5>A room</h5>
+                                                                    <small>Guests have their own room in a home, plus
+                                                                        access to shared spaces.</small>
+                                                                </div>
+                                                                <div class="gst_plc active">
+                                                                    <h5>A shared room</h5>
+                                                                    <small>Guests sleep in a room or common area that
+                                                                        may be shared with you or others.</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Where is your place
+                                                                located?</strong></h3>
+                                                        <div class="row mt-3 mb-5">
+                                                            <div class="col-12">
+                                                                <div class="map">
+                                                                    <div class="input-group mb-3 p-1">
+                                                                        <span class="input-group-text"
+                                                                            id="basic-addon1">
+                                                                            <i class="fa fa-map"></i>
+                                                                        </span>
+                                                                        <input type="text"
+                                                                            class="form-control shadow-none"
+                                                                            placeholder="Enter Address"
+                                                                            aria-label="Username"
+                                                                            aria-describedby="basic-addon1">
+                                                                    </div>
+                                                                    <iframe
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7931.494851879042!2d8.084545199055636!3d6.296885123228734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105ca1abffffffff%3A0xbc25469937eda7a5!2sBENITA%20COLLECTIONS!5e0!3m2!1sen!2sng!4v1698878656597!5m2!1sen!2sng"
+                                                                        width="100%" height="100%" style="border:0;"
+                                                                        allowfullscreen="" loading="lazy"
+                                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-3"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-6">
+                                                        <h3 class="dsb-title-header"><strong>Confirm your
+                                                                address</strong></h3>
+                                                        <div class="row mt-4 mb-5">
+                                                            <div class="col-12 ">
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>Country</small>
+                                                                    <select name="country" class="field">
+                                                                        <Option>Select</Option>
+                                                                        <Option>Nigeria</Option>
+                                                                        <Option>Kenya</Option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>Address line 1</small>
+                                                                    <input type="text" class="field"
+                                                                        placeholder="Enter Address" />
+                                                                </div>
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>Address line 2 (if applicable)</small>
+                                                                    <input type="text" class="field"
+                                                                        placeholder="Enter Address" />
+                                                                </div>
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>city/village</small>
+                                                                    <input type="text" class="field"
+                                                                        placeholder="Enter City" />
+                                                                </div>
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>State/Province</small>
+                                                                    <input type="text" class="field"
+                                                                        placeholder="Enter State" />
+                                                                </div>
+                                                                <div class="custom-input-group mb-3">
+                                                                    <small>Postal Code (if applicable)</small>
+                                                                    <input type="text" class="field"
+                                                                        placeholder="Enter Postal Code" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Is the pin in the right
+                                                                spot?</strong></h3>
+                                                        <div class="row mt-3 mb-5">
+                                                            <div class="col-12">
+                                                                <div class="map">
+                                                                    <div class="input-group mb-3 p-1">
+                                                                        <span class="input-group-text"
+                                                                            id="basic-addon1">
+                                                                            <i class="fa fa-map"></i>
+                                                                        </span>
+                                                                        <input type="text"
+                                                                            class="form-control shadow-none"
+                                                                            value="No. 2 Nkaliki, Abakaliki, Ebonyi State"
+                                                                            placeholder="Enter Address"
+                                                                            aria-label="Username"
+                                                                            aria-describedby="basic-addon1">
+                                                                    </div>
+                                                                    <iframe
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7931.494851879042!2d8.084545199055636!3d6.296885123228734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105ca1abffffffff%3A0xbc25469937eda7a5!2sBENITA%20COLLECTIONS!5e0!3m2!1sen!2sng!4v1698878656597!5m2!1sen!2sng"
+                                                                        width="100%" height="100%" style="border:0;"
+                                                                        allowfullscreen="" loading="lazy"
+                                                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Share some basics about
+                                                                your
+                                                                place</strong></h3>
+                                                        <div class="row mt-4 mb-5">
+                                                            <div class="col-12">
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-1">
+                                                                    <div><small>Guests</small></div>
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center gap-2">
+                                                                        <button type="button"
+                                                                            class="btn-counter decrease">-</button>
+                                                                        <span class="counter">0</span>
+                                                                        <button type="button"
+                                                                            class="btn-counter increase">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-1">
+                                                                    <div><small>Bedrooms</small></div>
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center gap-2">
+                                                                        <button type="button"
+                                                                            class="btn-counter decrease">-</button>
+                                                                        <span>0</span>
+                                                                        <button type="button"
+                                                                            class="btn-counter increase">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-1">
+                                                                    <div><small>Beds</small></div>
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center gap-2">
+                                                                        <button type="button"
+                                                                            class="btn-counter decrease">-</button>
+                                                                        <span>0</span>
+                                                                        <button type="button"
+                                                                            class="btn-counter increase">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-1">
+                                                                    <div><small>Bathrooms</small></div>
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-center gap-2">
+                                                                        <button type="button"
+                                                                            class="btn-counter decrease">-</button>
+                                                                        <span>0</span>
+                                                                        <button type="button"
+                                                                            class="btn-counter increase">+</button>
+                                                                    </div>
+                                                                </div>
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row align-items-end mt-2">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-7 mb-3">
+                                                                <small class="text-primary">Step 2</small>
+                                                                <h3 class="dsb-header mt-2">Make your place stand out
+                                                                </h3>
+                                                                <small>
+                                                                    In this step, you’ll add some of the amenities
+                                                                    your place offers, plus 5 or more photos. Then,
+                                                                    you’ll create a title and description.
+                                                                </small>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-5 mb-3 d-flex align-items-end justify-content-center">
+                                                                <img src="asset/img/snowball2.png" width="110px"
+                                                                    alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Tell your guests what your
+                                                                place has to offer.</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Wifi
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Television
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Kitchen
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Washing Machine
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Free Packing Space
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Air Conditionining
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Workspace
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Swimming Pool
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Hot Tub
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Gym
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    <span style="font-size: 20px;">+</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Add at least 5 photos of
+                                                                your house</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-12">
+                                                                <input type="file" class="dropify" data-height="300"
+                                                                    data-allowed-file-extensions="jpg jpeg png gif"
+                                                                    accept="image/*" multiple>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row h-100">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <div class="row">
+                                                            <div
+                                                                class="col-12 d-flex align-items-center flex-column justify-content-center h100 text-center">
+                                                                <p class="text-dark w-50 text-center">We are magically
+                                                                    arranging your photos to show off your space</p>
+                                                                <small class="text-muted"> 0 of 5 uploaded</small>
+                                                                <p class="text-center mt-3">
+                                                                    <i class="fa fa-spin fa-spinner"></i>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <h3 class="dsb-title-header"><strong>Ta-da! How does this
+                                                                look!</strong></h3>
+                                                        <small class="text-muted"><b>Drag to rearrange</b></small>
+                                                        <div class="row mt-3 sortable">
+                                                            <div class="col-md-6 col-lg-4 mb-3 card-draggable">
+                                                                <img src="asset/img/products/product_13.jpg"
+                                                                    class="img-fluid rounded" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4 mb-3 card-draggable">
+                                                                <img src="asset/img/products/product_10.jpg"
+                                                                    class="img-fluid rounded" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4 mb-3 card-draggable">
+                                                                <img src="asset/img/products/product_5.png"
+                                                                    class="img-fluid rounded" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4 mb-3 card-draggable">
+                                                                <img src="asset/img/products/product-_12.jpg"
+                                                                    class="img-fluid rounded" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4 mb-3 card-draggable">
+                                                                <img src="asset/img/products/product_8.jpg"
+                                                                    class="img-fluid rounded" alt="">
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-4 mb-3">
+                                                                <div class="anpte_ctn rounded">
+                                                                    +
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Now, let's give your house
+                                                                a
+                                                                title</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-12">
+                                                                <small>Short titles work best. Have fun with it—you can
+                                                                    always change it later.</small>
+                                                                <div class="row d-flex flex-column">
+                                                                    <div class="form-group mt-4">
+                                                                        <input type="text" name="title"
+                                                                            class="form-control title-field"
+                                                                            style="height: 100px;"
+                                                                            placeholder="Title" />
+                                                                    </div>
+                                                                    <div><small class="word-count">0/30</small></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Next, let's describe your
+                                                                house</strong></h3>
+                                                        <small>Choose up to 2 highlights. We'll use these to get your
+                                                            description started.</small>
+                                                        <div class="row mt-5">
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Peaceful
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Unique
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Stylish
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Family-friendly
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-lg-4">
+                                                                <div class="apt_sib_self">
+                                                                    Spacious
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Create your
+                                                                description</strong></h3>
+                                                        <div class="row mt-3">
+                                                            <div class="col-sm-12">
+                                                                <small>Share what makes your place special.</small>
+                                                                <div class="d-flex flex-column">
+                                                                    <div class="form-group mt-4">
+                                                                        <textarea type="text" name="title"
+                                                                            class="form-control description-field"
+                                                                            style="height: 200px;"
+                                                                            placeholder="Description"></textarea>
+                                                                    </div>
+                                                                    <div><small class="word-count">0/500</small></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row align-items-center justify-content-center mt-2">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-7 mb-3">
+                                                                <small class="text-primary">Step 3</small>
+                                                                <h3 class="dsb-header mt-2">Finish up and Publish</h3>
+                                                                <small>
+                                                                    Finally, you'll choose booking settings, set up
+                                                                    pricing, and publish your listing.
+                                                                </small>
+                                                            </div>
+                                                            <div class="col-md-5 mb-3">
+                                                                <img src="asset/img/house3.png" width="200px" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Decide how you’ll confirm
+                                                                reservations</strong></h3>
+                                                        <div class="row mt-4">
+                                                            <div class="col-12">
+                                                                <div class="gst_plc">
+                                                                    <h5>Use instant book</h5>
+                                                                    <small>Guests can book automatically.</small>
+                                                                </div>
+                                                                <div class="gst_plc">
+                                                                    <h5>Approve or decline requests</h5>
+                                                                    <small>Guests must ask if they can book.</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-header"><strong>It is time to set your
+                                                                price</strong></h3>
+                                                        <small>You can change your price anytime</small>
+                                                        <div class="row mt-5">
+                                                            <div class="col-12">
+                                                                <input type="text" class="form-control lst_prc"
+                                                                    name="price" value="$65">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Add discounts to your
+                                                                listing</strong></h3>
+                                                        <small>Help your place stand out to get booked faster and earn
+                                                            your first reviews.</small>
+                                                        <div class="row mt-4">
+                                                            <div class="col-12">
+                                                                <div class="gst_plc">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-between">
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-center gap-3">
+                                                                            <h5 class="text-primary"><b>15%</b></h5>
+                                                                            <div>
+                                                                                <h6 class="mb-0 pb-0"><b>New
+                                                                                        Listing Promotion</b>
+                                                                                </h6>
+                                                                                <small class="text-sm">Offer 20%
+                                                                                    off of your bookings</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <label>
+                                                                            <input type="checkbox" class="ckb_discount">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gst_plc">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-between">
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-center gap-3">
+                                                                            <h5 class="text-primary"><b>10%</b></h5>
+                                                                            <div>
+                                                                                <h6 class="mb-0 pb-0"><b>Weekly
+                                                                                        discounts</b></h6>
+                                                                                <small class="text-sm">For stays of
+                                                                                    7 nights or more</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <label>
+                                                                            <input type="checkbox" class="ckb_discount">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="gst_plc">
+                                                                    <div
+                                                                        class="d-flex align-items-center justify-content-between">
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-center gap-3">
+                                                                            <h5 class="text-primary"><b>20%</b></h5>
+                                                                            <div>
+                                                                                <h6 class="mb-0 pb-0"><b>Monthly
+                                                                                        discounts</b></h6>
+                                                                                <small class="text-sm">For stays of
+                                                                                    28 nights or more</small>
+                                                                            </div>
+                                                                        </div>
+                                                                        <label>
+                                                                            <input type="checkbox" class="ckb_discount">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Almost there, one last step
+                                                                to go!</strong></h3>
+                                                        <div class="row mt-5">
+                                                            <div class="col-12">
+                                                                <h6><b>How are you hosting in ChainCity?</b></h6>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-3">
+                                                                    <div>
+                                                                        <small>Hosting as a private
+                                                                            individual</small>
+                                                                    </div>
+                                                                    <input type="checkbox" class="ckb_discount">
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-3">
+                                                                    <div>
+                                                                        <small>Hosting as a business</small>
+                                                                    </div>
+                                                                    <input type="checkbox" class="ckb_discount">
+                                                                </div>
+                                                                <hr>
+                                                                <h6><b>Does your place have any of these?</b></h6>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-3">
+                                                                    <div>
+                                                                        <small>Security Camera(s)</small>
+                                                                    </div>
+                                                                    <input type="checkbox" class="ckb_discount">
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-3">
+                                                                    <div>
+                                                                        <small>Weapons</small>
+                                                                    </div>
+                                                                    <input type="checkbox" class="ckb_discount">
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex align-items-center justify-content-between mt-3">
+                                                                    <div>
+                                                                        <small>Dangerous animals</small>
+                                                                    </div>
+                                                                    <input type="checkbox" class="ckb_discount">
+                                                                </div>
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="row">
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                    <div class="col-sm-12 col-md-10 col-lg-8">
+                                                        <h3 class="dsb-title-header"><strong>Review your
+                                                                listing</strong>
+                                                        </h3>
+                                                        <small>Here's what we'll show to guests. Make sure everything
+                                                            looks good.</small>
+                                                        <div class="row align-items-start my-5">
+                                                            <div class="col-md-6 col-lg-6 mb-3">
+                                                                <div class="ltg_prvc">
+                                                                    <div class="img">
+                                                                        <img src="asset/img/products/product_15.jpg"
+                                                                            class="img-flui" alt="">
+                                                                    </div>
+                                                                    <div class="ltg_content">
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-between">
+                                                                            <span class="fw-bold">Luxury
+                                                                                Lounge</span>
+                                                                            <span class="fw-bold"><i
+                                                                                    class="fas fa-star"></i>
+                                                                                4.5</span>
+                                                                        </div>
+                                                                        <p class="text-muted">Nkaliki, Abakaliki</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 mb-3">
+                                                                <h5><strong>What's next?</strong></h5>
+                                                                <div class="d-flex align-items-start gap-3 mt-3">
+                                                                    <img src="asset/img/verify.png" alt="">
+                                                                    <div>
+                                                                        <h6><strong>Confirm a few details and
+                                                                                publish</strong></h6>
+                                                                        <small>We'll let you know if you need to
+                                                                            verify your identity or register with
+                                                                            the local government.</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-start gap-3 mt-3">
+                                                                    <img src="asset/img/calendar.png" width="20px"
+                                                                        alt="">
+                                                                    <div>
+                                                                        <h6><strong>Setup your calendar</strong></h6>
+                                                                        <small> Choose which date your llisting is
+                                                                            available. It will be withing 24 hours
+                                                                            after you publish.</small>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-start gap-3 mt-3">
+                                                                    <img src="asset/img/edit-2.png" width="20px"
+                                                                        alt="">
+                                                                    <div>
+                                                                        <h6><strong>Adjust your settings</strong>
+                                                                        </h6>
+                                                                        <small> Set house rules, select a connection
+                                                                            policy, choose how guests book and
+                                                                            more.</small>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-1 col-lg-2"></div>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4 mt-4">
+                                                <div class="col-12">
+                                                    <div class="d-flex align-items-center justify-content-between">
+                                                        <button type="button"
+                                                            class="rlf-btn rlf-btn-outline tb-btn tab_previous adm-dsb-tab-btn"><i
+                                                                class="fa fa-arrow-left"></i>&nbsp; Back</button>
+                                                        <button type="button" 
+                                                            class="rlf-btn rlf-btn-primary adm-dsb-tab-btn tb-btn  tab_next">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-5 py-2 text-center border-top">
+                                    <span>Powered by <a href="https://tutapis.com" class="text-primary">Tutapis</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    
+
+
+    <!-- JS FILES -->
+    <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="vendor/popper/popper.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/all.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="vendor/sweet-alert/sweetalert.min.js"></script>
+    <script src="asset/js/listing.js"></script>
+    <script src="asset/js/main.js"></script>
+
+</body>
+
+</html>

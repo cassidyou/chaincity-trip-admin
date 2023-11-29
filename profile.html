@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Profile Management</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="asset/img/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+    <!-- Datatables CSS -->
+    <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Lightgallery CSS -->
+    <link rel="stylesheet" href="vendor/lightgallery/css/lightgallery.min.css">
+
+    <!-- Toastr CSS -->
+    <link rel="stylesheet" href="vendor/toastr/css/toastr.min.css">
+
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="asset/css/plugin.css">
+    <link rel="stylesheet" type="text/css" href="asset/css/chaincitydashboard.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/admin.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main>
+            <div class="container-fluid">
+                <div class="row" style="position: relative;">
+                    <div class="col-lg-3 adm-sidebar">
+                        <div class="adm-sidebar-header">
+                            <div class="adm-sidebar-close d-lg-none"><i class="fa fa-times"></i></div>
+                            <div class="logo">
+                                <img src="asset/img/logo.png" class="img-fluid mb-2" alt="">
+                            </div>
+                        </div>
+                        <div class="adm-sidebar-content">
+                            <ul class="adm-sidebar-links-nav">
+                                <li class="adm-sidebar-link-item">
+                                    <a href="index.html" class="adm-sidebar-link">
+                                        <img src="asset/img/icon-dashboard-active.png" class="active d-none" alt="">
+                                        <img src="asset/img/icon-dashboard-inactive.png" class="in-active" alt="">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="adm-sidebar-link-item">
+                                    <a href="listing-management.html" class="adm-sidebar-link">
+                                        <img src="asset/img/icon-listing-active.png" class="active d-none" alt="">
+                                        <img src="asset/img/icon-listing.png" class="in-active" alt="">
+                                        Listing Management
+                                    </a>
+                                </li>
+                                <li class="adm-sidebar-link-item">
+                                    <a href="booking-management.html" class="adm-sidebar-link">
+                                        <img src="asset/img/icon-booking-active.png" class="active d-none" alt="">
+                                        <img src="asset/img/icon-booking.png" class="in-active" alt="">
+                                        Booking Management
+                                    </a>
+                                </li>
+
+                                <li class="adm-sidebar-link-item">
+                                    <a href="user-management.html" class="adm-sidebar-link">
+                                        <img src="asset/img/icon-users-active.png" class="active d-none" alt="">
+                                        <img src="asset/img/icon-users-inactive.png" class="in-active" alt="">
+                                        User Management
+                                    </a>
+                                </li>
+                                <li class="adm-sidebar-link-item">
+                                    <a href="payment-revenue.html" class="adm-sidebar-link">
+                                        <img src="asset/img/icon-payment-active.png" class="active d-none" alt="">
+                                        <img src="asset/img/icon-payment.png" class="in-active" alt="">
+                                        Payment and Revenue
+                                    </a>
+                                </li>
+                                <li class="adm-sidebar-link-item">
+                                    <a href="profile.html" class="adm-sidebar-link active">
+                                        <img src="asset/img/icon-profile-active.png" class="active" alt="">
+                                        <img src="asset/img/icon-profile.png" class="in-active d-none" alt="">
+                                        Profile
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="adm-sidebar-footer">
+                                <a href="profile.html">
+                                    <div class="d-flex align-items-center justify-content-start gap-3 mb-4">
+                                        <div class="img">
+                                            <img src="asset/img/team4.png" alt="">
+                                        </div>
+                                        <div class="usr">
+                                            <h4>Mary John Doe</h4>
+                                            <small>maryjohndoe@domain.com</small>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="mb-5 pb-5">
+                                    <a href="javascript:;" class="adm-btn adm-btn-primary">Logout <img
+                                            src="asset/img/icon-logout.png" alt=""></a>
+                                </div>
+                                <div>
+                                    <img src="asset/img/support-img-red.png" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9 adm-main">
+                       <div class="adm-main-header">
+                            <div class="dtl order-2 order-lg-1">
+                                <h4>Profile Management</h4>
+                                <small>Manage your profile settings</small>
+                            </div>
+                            <div class="order-1 order-lg-2 nty-ctn">
+                                <img src="asset/img/icon-menu-red.png" class="d-lg-none adm-menu-btn" alt="">
+                                <ul class="nty">
+                                    <li style="position: relative;" class="dropdown">
+                                        <img src="asset/img/icon-bell.png" alt="" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="nty-counter">22</span>
+                                        <ul class="dropdown-menu ntf_dpw p-3 drop-notify adm-notify">
+                                            <li
+                                                class="d-flex align-items-start justify-content-between border-bottom py-3">
+                                                <h3 class="dsb-header-sm text-primary mb-0">Notifications
+                                                </h3>
+                                                <a href="javascript:;" class="text-dark"> Clear all </a>
+                                            </li>
+                                            <li class="nav_dpd_itm">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-start justify-content-start gap-2">
+                                                        <div>
+                                                            <a href="notification.html" class="text-dark">
+                                                                <h5 class="ntf_heading"><strong>New
+                                                                        listing
+                                                                        created</strong></h5>
+                                                                <small class="ntf_stdt">You created a
+                                                                    listing now. <a href="listing-management.html"
+                                                                        class="text-primary">See
+                                                                        it.</a></small>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-end gap-3">
+                                                        <p class="ntf_tme">Yesterday</p>
+                                                        <p class="adm-nty-unread"></p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="nav_dpd_itm">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-start justify-content-start gap-2">
+                                                        <div>
+                                                            <a href="notification.html" class="text-dark read">
+                                                                <h5 class="ntf_heading"><strong>New
+                                                                        feature
+                                                                        alert</strong></h5>
+                                                                <small class="ntf_stdt">Checkout how we
+                                                                    do things
+                                                                    newly</small>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="ntf_tme">Yesterday</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html">
+                                            <div class="img">
+                                                <img src="asset/img/team3.png" alt="">
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                       </div>
+                        <div class="adm-main-content">
+                         <div class="row">
+                              <div class="col-sm-12 pb-5">
+                                  <form>
+                                      <div class="prl-card">
+                                          <div class="prl-card-header">
+                                              <div class="img">
+                                                  <img src="asset/img/Avatars.png" class="img-fluid h-100" alt="">
+                                              </div>
+                                              <div>
+                                                  <h2 class="dsb-header-sm mb-0">John Doe</h2>
+                                                  <small>john@gmail.com</small>
+                                              </div>
+                                          </div>
+                                          <div class="prl-card-body mt-5">
+                                              <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                      <div class="form-group">
+                                                          <label for="">First Name</label>
+                                                          <input type="text" name="firstname" value="John" class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                      <div class="form-group">
+                                                          <label for="">Last Name</label>
+                                                          <input type="text" name="lastname" value="Doe" class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group mb-4">
+                                                  <label for="">Email Address</label>
+                                                  <input type="text" name="email" id="" value="joha@gmail.com"
+                                                      class="form-control">
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                      <div class="form-group">
+                                                          <label for="">Phone Number (Primary)</label>
+                                                          <input type="text" name="prim-phone" value="+234809873654"
+                                                              class="form-control">
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                      <div class="form-group">
+                                                          <label for="">Phone Number (Secondary)</label>
+                                                          <input type="text" name="sec-phone" value="+23489876456524"
+                                                              class="form-control">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="form-group mb-4">
+                                                  <label for="">Country</label>
+                                                  <select name="country" id="" class="form-control">
+                                                      <option value="">Select Country</option>
+                                                      <option value="nigeria" selected>Nigeria</option>
+                                                  </select>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                      <div class="form-group">
+                                                          <label for="">State</label>
+                                                          <select name="country" id="" class="form-control">
+                                                              <option value="">Select State</option>
+                                                              <option value="nigeria" selected>Ebonyi</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                      <div class="form-group">
+                                                          <label for="">City</label>
+                                                          <select name="country" id="" class="form-control">
+                                                              <option value="">Select</option>
+                                                              <option value="city" selected>Abakaliki</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="text-end">
+                                          <button class="rlf-btn rlf-btn-primary prl-btn">Save Changes</button>
+                                      </div>
+                                  </form>
+                                  <br><br><br>
+                                  <form action="">
+                                      <div class="prl-card">
+                                          <div class="prl-card-body">
+                                              <div class="form-group mb-4">
+                                                  <label for="">Crypto Currency</label>
+                                                  <select name="country" id="" class="form-control">
+                                                      <option value="">Select Crypto Currency</option>
+                                                      <option value="bitcoin">Bitcoin</option>
+                                                  </select>
+                                              </div>
+                                              <div class="form-group mb-4">
+                                                  <label for="">Wallet Address</label>
+                                                  <input type="text" name="crypto-wallet" class="form-control">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="text-end">
+                                          <button class="rlf-btn rlf-btn-primary prl-btn">Save Changes</button>
+                                      </div>
+                                  </form>
+                                  <br><br><br>
+                                  <div class="d-flex align-items-center justify-content-between ">
+                                      <label for="">Change Password</label>
+                                      <div class="form-check form-switch">
+                                          <input class="form-check-input c-pointer" type="checkbox"
+                                              id="flexSwitchCheckDefaultPswd">
+                                      </div>
+                                  </div>
+                                  <form class="pswd-form d-none mt-3">
+                                      <div class="prl-card">
+                                          <div class="prl-card-body">
+                                              <div class="form-group mb-4">
+                                                  <label for="">Old Password</label>
+                                                  <input type="password" name="old-password" class="form-control">
+                                              </div>
+                                              <div class="form-group mb-4">
+                                                  <label for="">New Password</label>
+                                                  <input type="password" name="new-password" class="form-control">
+                                              </div>
+                                              <div class="form-group mb-4">
+                                                  <label for="">Confirm Password</label>
+                                                  <input type="password" name="confirm-password" class="form-control">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="text-end">
+                                          <button class="rlf-btn rlf-btn-primary prl-btn">Save Changes</button>
+                                      </div>
+          
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 mt-5 py-2 text-center border-top">
+                                <span>Powered by <a href="https://tutapis.com"
+                                        class="text-primary">Tutapis</a></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <!-- JS FILES -->
+    <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="vendor/popper/popper.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/all.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="vendor/sweet-alert/sweetalert.min.js"></script>
+    <script src="vendor/toastr/js/toastr.min.js"></script>
+    <script src="asset/js/plugins_init.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+     $(document).ready(function(){
+         $('#flexSwitchCheckDefaultPswd').on('change', function () {
+             $('.pswd-form').toggleClass('d-none');
+         });
+     });
+ </script>
+</body>
+
+</html>
